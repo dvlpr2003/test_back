@@ -5,7 +5,7 @@ import connetDB from "./config/mongodb.js"
 import bankAccRouter from "./routes/bankAccRoute.js"
 import adminAccRouter from "./routes/adminAccRoute.js"
 import orderRouter from "./routes/orderRoute.js"
-import { createCanvas, loadImage } from "canvas";
+const { createCanvas, loadImage } = '@napi-rs/canvas'
 import path from "path"
 import { fileURLToPath } from "url";
 import fs from "fs";
