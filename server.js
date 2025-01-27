@@ -21,7 +21,9 @@ connetDB()
 app.use(express.json())
 app.use(cors(
     {origin: "https://test-front-delta-murex.vercel.app", 
-    credentials: true,}
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+}
 ))
 
 app.use('/api/bankAcc', bankAccRouter)
