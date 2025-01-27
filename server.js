@@ -20,7 +20,7 @@ connetDB()
 
 app.use(express.json())
 app.use(cors(
-    {origin: "http://localhost:5173", 
+    {origin: "https://test-front-delta-murex.vercel.app", 
     credentials: true,}
 ))
 
