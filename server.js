@@ -31,9 +31,12 @@ app.use('/api/bankAcc', bankAccRouter)
 app.use('/api/admin', adminAccRouter)
 app.use('/api/order', orderRouter)
 
+app.options("*", cors());
+
 app.get("/", (req, res) => {
     res.send("API WORKING")
 })
+
 
 function formatDate(date) {
     const day = String(date.getDate()).padStart(2, '0');
