@@ -6,7 +6,7 @@ const connetDB = async () => {
         console.log("DB CONNECTED")
     })
 
-    await mongoose.connect(`${process.env.MONGODB_URI}/dvlpr`,)
+    await mongoose.connect(`mongodb+srv://sathya01:sathya01@cluster0.heq6g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/dvlpr`,)
 }
 
 export default connetDB;
